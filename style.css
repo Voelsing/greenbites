@@ -1,0 +1,65 @@
+/* style.css */
+:root{
+  --gb-green: #466B3F;   
+  --gb-brown: #A77246;   
+  --gb-ink: #233040;
+  --gb-sand: #E6D5B9;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family:"Inter",system-ui,-apple-system,Segoe UI,"Roboto","Ubuntu","Helvetica Neue",Arial,sans-serif;
+  color:var(--gb-ink);
+  background:var(--gb-sand);
+}
+
+/* Typo */
+.brand,
+.section-head,
+.hero-title,
+.kick,
+.subhead{
+  font-family:"Asap Condensed",sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+.brand{color:var(--gb-green)}
+.section-head{color:var(--gb-green); font-size:2.2rem; margin:0 0 .75rem}
+.subhead{font-size:1.1rem}
+
+/* Topline */
+.topline{background:#e9dec9}
+
+/* Hero */
+.hero{background:var(--gb-sand)}
+.kick{opacity:.9; font-size:2.2rem}
+.hero-plate-wrap{width:min(360px,70vw); aspect-ratio:1/1; border-radius:50%; background:#fff; box-shadow:0 10px 30px rgba(0,0,0,.15); display:flex; align-items:center; justify-content:center}
+.hero-plate{width:100%; height:100%; object-fit:cover; border-radius:50%}
+.hero-title{color:var(--gb-green); font-size:5.2rem; line-height:1; margin-top:1rem}
+@media (max-width:576px){ .hero-title{font-size:3.3rem} .kick{font-size:1.3rem} }
+
+/* Intro + Deko */
+.intro{background:linear-gradient(180deg,#fff0 0,#fff0 55%,#f5e8d4 55%,#f5e8d4 100%)}
+.dec{position:absolute; width:360px; filter:drop-shadow(0 6px 20px rgba(0,0,0,.2))}
+.dec-left{left:-120px; top:-40px}
+.dec-right{right:-120px; top:60px}
+
+/* Erwartet Block */
+.expect{background:linear-gradient(180deg,var(--gb-sage) 0,var(--gb-sage) 70%, var(--gb-sand) 70%)}
+.badge-head{background:var(--gb-green); color:#fff; padding:.2rem .45rem; border-radius:.35rem; display:inline-block}
+.obj{height:150px; object-fit:cover;}
+
+/* Karte */
+.ratio img{object-position:center}
+
+/* CTA Foto-Hintergrund */
+.cta{isolation:isolate}
+.bg-photo{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(.65)}
+.floating{backdrop-filter:saturate(120%) blur(2px); background:#fffffff2; border:0}
+.cta .card{border-radius:1rem}
+
+/* Footer */
+.foot{background:var(--gb-brown); color:#fff}
+.foot .nav-link{color:#fff; opacity:.95}
+.foot .nav-link:hover{opacity:1}
